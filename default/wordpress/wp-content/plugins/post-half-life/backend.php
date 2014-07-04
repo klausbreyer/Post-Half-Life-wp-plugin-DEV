@@ -12,6 +12,7 @@ while ( $project_query ->have_posts()) {
 	$phlsqldate = $post->post_date; 
 	$timestamp = strtotime($post->post_date); 
 	$row = array();
+	
 	$row['id'] = $post->ID;
 	$row['guid'] = $details->guid; 
 	$row['title'] = $details->post_title;
@@ -44,13 +45,20 @@ foreach ($steps as $step) {
 	}
 	# code...
 }
-
-print_r($highlights);
 wp_reset_postdata();
 ?>
 
 
 <table border=1 cellspacing=0 cellpadding=3> 
+	<tr>
+		<th colspan="2">Post</th>
+		<th colspan="3">Date</th>
+		<th colspan="11">Number of views in the first.. </th>
+		
+		
+		
+		
+		</tr>
 	<tr>
 		<th>ID</th>
 		<th>Title</th>
@@ -69,8 +77,9 @@ wp_reset_postdata();
 		<th>1m</th>
 		<th>1y</th>
 		</tr>
-		<?php foreach ($rows as $item): ?>
+		<?php foreach ($rows as $i => $item): ?>
 			<tr>
+			<!-- <tr class="<?php echo ($i%2 == 0?'odd':'even'); ?>"> -->
 			<td><?php echo $item['id'] ?></td>
 			<td><a href="<?php echo $item['guid'] ?>" target="_blank"><?php echo $item['title'] ?></a></td>
 			<td><?php echo $item['dow'] ?></td>
@@ -91,3 +100,8 @@ wp_reset_postdata();
 		<?php endforeach ?>
 		
 		</table>
+<style type="text/css" media="screen">
+	
+.odd {	background:#fff;}
+.even {	background:#ddd;}
+</style>
