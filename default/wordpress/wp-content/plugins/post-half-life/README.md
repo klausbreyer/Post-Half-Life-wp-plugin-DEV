@@ -1,31 +1,29 @@
-=== Post-Half-Life ===
-Contributors: klausbreyer
-Author: Adknowledge
-Author URI: http://klaus-breyer.de
-Plugin URI: http://klaus-breyer.de/projekte/post-half-life
-Tags: statistics, posts, multilingual, thumbnails, social, traffic, peak
-Requires at least: 3.3
-Tested up to: 3.9.1
-Stable tag: 4.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# Post-Half-Life
+
+Copyright (C) 2014 Klaus Breyer
+
+* Author: Klaus Breyer <kb@klaus-breyer.de>
+* Keywords: statistics, posts, multilingual, thumbnails, social, traffic, peak
+* URL: <http://klaus-breyer.de/projekte/post-half-life/>
+
+Licensed under the [GPL version 2](http://www.gnu.org/licenses/) or later.
+
+
+## Description
 
 A Plugin for calculating the half life of a blog post. So you can determine afterwards, which content and what posting time is best for your content.
 
-== Installation ==
+## Installation
 
 1. Copy the folder `post-half-life` into the directory `wp-content/plugins/` and activate the plugin.
 2. The plugin starts with tracking new visits immediately. But the plugin only records new data. So Wait until you published a new post and then ..
 3. .. go to the "Post-Half-Life (p½)" Dashboard page to view how the post is working out in terms of his half-life. 
+    
 
-== Screenshots ==
+## Changelog
 
-1. The 
-2. This is the second screen shot
+### 0.1 ###
 
-== Changelog ==
-
-= 0.1 =
 This is first public beta release of the plugin. 
 * Record every page view including the referrer for future evaluation
 * Does not distinguish between unique, repeated and own visits. Every visit counts!
