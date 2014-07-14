@@ -1,4 +1,4 @@
-=== Post-Half-Life ===
+=== Post Half-Life Statistics ===
 Contributors: klausbreyer
 Author: Adknowledge
 Author URI: http://klaus-breyer.de
@@ -20,8 +20,7 @@ A Plugin for calculating the half life of a blog post. So you can determine afte
 
 == Screenshots ==
 
-1. The 
-2. This is the second screen shot
+1. The Dashboard with the number of visits in a given timespan. 
 
 == Changelog ==
 
